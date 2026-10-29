@@ -1,0 +1,25 @@
+# Normalize every text file to LF in the repository and in the working tree.
+* text=auto eol=lf
+
+# Explicit text types (kept for readability and diffs).
+*.js       text eol=lf
+*.json     text eol=lf
+*.yml      text eol=lf
+*.yaml     text eol=lf
+*.md       text eol=lf
+*.svg      text eol=lf
+*.txt      text eol=lf
+LICENSE    text eol=lf
+.gitignore text eol=lf
+
+# Binary assets must never be normalized or diffed as text.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.webp binary
+*.gif  binary
+*.ico  binary
+
+# Keep GitHub language statistics focused on the plugin sources.
+docs/** linguist-documentation
+README.md linguist-documentation
