@@ -124,7 +124,7 @@ Get-ChildItem -LiteralPath . -Force | Where-Object { $_.Name -ne '.git' } |
 ### 方式二：git clone 到插件目录
 
 ```pwsh
-git clone https://github.com/phf0313/dsh-wallpaper-auto.git "<插件目录>\dsh-wallpaper"
+git clone https://github.com/phf0313/dsh-wallpaper.git "<插件目录>\dsh-wallpaper"
 ```
 
 ### 方式三：在 `cordis.patch.yml` 中注册条目
@@ -203,7 +203,7 @@ wallpaper-plugin/                 # 仓库根，同时是插件包根
 - `files`：仅打包运行时必需文件（`index.js`、`client.js`、`cordis.patch.yml`、`locale/*.json`、`icon.svg`），因此请直接使用整个仓库目录安装。
 - `dsh.bundle.patch`：`./cordis.patch.yml`。
 - `dsh.client`：`platform: "web"`、`immediately: true`，`inject` 声明 `@deepseek-ai/dsh-client-locale`、`@deepseek-ai/dsh-client-ui-settings`、`@deepseek-ai/dsh-client-ui-layout`。
-- `license: "MIT"`、`author: "phf0313"`，`repository` / `homepage` / `bugs` 均指向 `https://github.com/phf0313/dsh-wallpaper-auto`。
+- `license: "MIT"`、`author: "phf0313"`，`repository` / `homepage` / `bugs` 均指向 `https://github.com/phf0313/dsh-wallpaper`。
 
 ## 平台支持
 
